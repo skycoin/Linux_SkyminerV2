@@ -1,0 +1,9 @@
+#!/bin/bash
+./make_uboot.sh sopine_baseboard
+./make_kernel.sh sopine_baseboard
+./make_rootfs.sh rootfs debian_buster_rootfs.tar buster
+rm -rf debian_image.img
+./make_empty_image.sh debian_image.img
+./make_image.sh debian_image.img debian_buster_rootfs.tar sopine_baseboard
+
+

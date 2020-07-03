@@ -1,0 +1,13 @@
+diff --git a/arch/arm/cpu/armv7/sun50iw1p1/spl/clock_spl.c b/arch/arm/cpu/armv7/sun50iw1p1/spl/clock_spl.c
+index 491c036..1d8fff8 100755
+--- a/arch/arm/cpu/armv7/sun50iw1p1/spl/clock_spl.c
++++ b/arch/arm/cpu/armv7/sun50iw1p1/spl/clock_spl.c
+@@ -131,7 +131,7 @@ void set_pll_mbus(void)
+ void set_pll( void )
+ {
+ 	//use new mode
+-	printf("set pll start\n");
++	printf("jingbo---->set pll start\n");
+ 	enable_pll_lock_bit(LOCK_EN_NEW_MODE);
+ 
+ 	set_pll_cpux_axi();
